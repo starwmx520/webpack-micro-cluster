@@ -1,14 +1,11 @@
-# webpack-micro-cluster
+# webpack-cluster
 
->  multiple webpack instances working together
-
-[![Build Status](https://travis-ci.org/nanyuantingfeng/webpack-micro-cluster.svg?branch=master)](https://travis-ci.org/nanyuantingfeng/webpack-micro-cluster)
-[![GitHub repo size](https://img.shields.io/github/repo-size/nanyuantingfeng/webpack-micro-cluster)](https://img.shields.io/github/repo-size/nanyuantingfeng/webpack-micro-cluster)
+fork nanyuantingfeng 
 
 #### Install
 
 ```npm
-npm install --save-dev webpack-micro-cluster
+npm install --save-dev webpack-cluster
 ```
 
 
@@ -31,7 +28,7 @@ module.exports = {
    //...
     new Master({
       masterId: 'demo', // The Name of Master
-      injected: [`var __WORKERS__ = window.__WORKERS__ = window.__WORKERS__ || {};`]
+      injected: [[`var __WHISPERED_PLUGINS__ = window.__WHISPERED_PLUGINS__ = window.__WHISPERED_PLUGINS__ || {};`]]
     })
   ]
 }
@@ -46,9 +43,11 @@ module.exports = {
   
   output: {
  		// ....
-    libraryTarget: 'assign',  
-    libraryExport: 'default',
-    library: ['__WORKERS__', 'worker0'] 
+    library: {
+            name: ['__WHISPERED_PLUGINS__', '[name]'],
+            type: 'assign',
+            export: 'default'
+    },
   },
   
   plugins: [

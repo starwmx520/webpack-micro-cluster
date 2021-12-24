@@ -1,6 +1,4 @@
-/***************************************************
- * Created by nanyuantingfeng on 2020/3/1 17:53. *
- ***************************************************/
+
 const path = require('path')
 const Worker = require('../../').Worker
 

@@ -1,7 +1,7 @@
 {
-  "name": "webpack-micro-cluster",
-  "version": "1.1.1",
-  "description": "multiple webpack instances work together",
+  "name": "webpack-cluster",
+  "version": "1.0.0",
+  "description": "webpack-cluster",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
@@ -9,30 +9,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nanyuantingfeng/webpack-micro-cluster.git"
+    "url": "git+https://github.com/starwmx520/webpack-micro-cluster.git"
   },
   "keywords": [
-    "webpack",
-    "cluster",
-    "multiple"
+    "webpackCluster"
   ],
   "author": "nanyuantingfeng<nanyuantingfeng@aliyun.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nanyuantingfeng/webpack-micro-cluster/issues"
+    "url": "https://github.com/starwmx520/webpack-micro-cluster/issues"
   },
-  "homepage": "https://github.com/nanyuantingfeng/webpack-micro-cluster#readme",
+  "homepage": "https://github.com/starwmx520/webpack-micro-cluster#readme",
   "dependencies": {
     "ansi-colors": "^4.1.1",
     "async-exit-hook": "^2.0.1",
-    "https-loader": "^1.0.3",
-    "node-ipc": "^9.1.1",
-    "webpack-inject-plugin": "^1.5.4",
-    "webpack-virtual-modules": "^0.2.1"
+    "node-ipc": "^9.1.1"
   },
   "peerDependencies": {
     "webpack": "*",
-    "webpack-dev-server": "*"
+    "webpack-dev-server": "*",
+    "webpack-inject-plugin": "^1.5.4",
+    "webpack-virtual-modules5": "^1.0.0",
+    "https-loader": "^1.0.3"
   },
   "devDependencies": {
     "jest": "^25.4.0",

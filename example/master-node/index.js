@@ -1,6 +1,4 @@
-/***************************************************
- * Created by nanyuantingfeng on 2020/3/1 17:53. *
- ***************************************************/
+
 console.log('master-node', Math.random())
 function log() {
   const p = window.document.createElement('p')
