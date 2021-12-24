@@ -5,7 +5,7 @@ fork nanyuantingfeng
 #### Install
 
 ```npm
-npm install --save-dev webpack-cluster
+npm install --save-dev webpack5-cluster
 ```
 
 
